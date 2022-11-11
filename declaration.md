@@ -74,7 +74,7 @@ The whole team agree that this declaration is accurate and complete.
 
 ## Notes
 
-n/a 
+N/A 
 
 <!-- Free form text -->
 <!-- E.g. EC submitted (not accepted yet) -->
