@@ -3,7 +3,7 @@
 
 ## What do you propose?
 
-We will be delevloping a mobile geo location photo guesser application. This allows users to interact with the real world by bridging the gap between physical and virtual reality. 
+We will be developing a mobile geo location photo guesser application. This allows users to interact with the real world by bridging the gap between physical and augmented reality. 
 
 ## Why is there a need for this system? 
 
