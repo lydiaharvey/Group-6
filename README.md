@@ -1,2 +1,3 @@
-# Group-6
-Group 6 software engineering and theory 
+# Software Engineering Theory and Practice
+## Group 6 - Photo capture geo guesser 
+### Lydia, Yemi, Sarah, Priya, Jay
