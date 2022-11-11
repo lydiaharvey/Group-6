@@ -3,8 +3,9 @@
 
 ## CW1.3 Project application domain
 
-*Our target audience will be users who use social media frequently and  communicate with their friends on a daily basis. 
-*There is a large target audience, particularly of young adults who document their lives online regularly. 
+Our target audience will be users who use social media frequently and  communicate with their friends on a daily basis. 
+
+There is a large target audience, particularly of young adults who document their lives online regularly. 
 
 ## CW1.4 The team
 
