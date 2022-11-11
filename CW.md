@@ -14,9 +14,7 @@
 | --------------- | --------------- |
 | Business Understanding | Spelling | 
 | Data Understanding | Grammar | 
-| ERD| Code (embedded functions) | 
-| Databases  | | 
-| Evaluation | | 
+| ERD| Code (embedded functions) |  
 
 ### Priya
 
