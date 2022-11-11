@@ -51,9 +51,9 @@ There is a large target audience, particularly of young adults who document thei
 
 ## CW1.6 Logistics
 
-* Meet weekly face to face
+* Weekly collaborative meetings to further advance in the project development.
 * Every member is in Portsmouth
 * Whatsapp chat is used to record decisions
 * Democratic votes on what decisions will be made, any suggestions/ideas are allowed
-* Attendance form will record who attended meetings
+* Shared google drive so everyone can access all materials
 * Outcomes will be tracked via progress reports
