@@ -16,6 +16,7 @@ We will be developing a mobile application.
 - There will be other game elements like a leaderboard and a point system.
 - There will be a map displaying all the users' pictures pinned at the location they were taken. 
 - There will also be an account based system so the user has to log in.
+- Allow the consumers to interact with other users on the app and rate/comment on pictures uploaded.
 
 ## Sustainable Development Goals
 1. SD Goal 3 : Good health and wellbeing 
