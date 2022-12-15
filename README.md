@@ -1,7 +1,7 @@
 # Software Engineering Theory and Practice
 **Group 6:** Lydia, Yemi, Sarah, Priya, Jay
 
-<img width=200 px: alt="image" src="https://user-images.githubusercontent.com/91472896/207893523-07442711-7a7d-4a66-ab21-ad7f0524837d.png">
+<img width=200 alt="Screenshot 2022-12-15 at 17 10 24" src="https://user-images.githubusercontent.com/91472896/207896374-4600fc2e-164a-494d-bc14-3ce70b39eb66.png">
 
 ## What do you propose?
 
