@@ -1,6 +1,8 @@
 # Software Engineering Theory and Practice
 **Group 6:** Lydia, Yemi, Sarah, Priya, Jay
 
+<img width=200 px: alt="image" src="https://user-images.githubusercontent.com/91472896/207893523-07442711-7a7d-4a66-ab21-ad7f0524837d.png">
+
 ## What do you propose?
 
 We will be developing a mobile geo location photo guesser application. This allows users to interact with the real world by bridging the gap between physical and augmented reality. 
