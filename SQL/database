@@ -19,3 +19,13 @@ CREATE TABLE quiz(
     quiz_difficulty VARCHAR(6) NOT NULL,
     quiz_number INT NOT NULL
 );
+
+CREATE TABLE user_quizzes(
+    user_id INT REFERENCES user(user_id) NOT NULL PRIMARY KEY,
+    quiz_id INT REFERENCES quiz(quiz_id) NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE user_badges(
+    user_id INT REFERENCES user(user_id) NOT NULL PRIMARY KEY,
+    badge_id INT REFERENCES badges(badge_id) NOT NULL PRIMARY KEY
+);
