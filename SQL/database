@@ -29,3 +29,9 @@ CREATE TABLE user_badges(
     user_id INT REFERENCES user(user_id) NOT NULL PRIMARY KEY,
     badge_id INT REFERENCES badges(badge_id) NOT NULL PRIMARY KEY
 );
+
+--USER TABLE--
+CREATE TABLE user (user_id SERIAL NOT NULL PRIMARY KEY, f_name VARCHAR(50) NOT NULL,user_email VARCHAR(50) NOT NULL);
+
+--Badges table--
+CREATE TABLE badges(badge_id SERIAL NOT NULL PRIMARY KEY, badge_name VARCHAR(20) NOT NULL, badge_price INT NOT NULL);
