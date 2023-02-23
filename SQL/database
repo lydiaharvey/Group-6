@@ -1,0 +1,21 @@
+CREATE database setap;
+
+CREATE TABLE answers(
+    ans_id SERIAL NOT NULL PRIMARY KEY,
+    question_id INT NOT NULL REFERENCES questions(question_id),
+    ans_text VARCHAR(100)
+
+);
+
+CREATE TABLE questions(
+    question_id SERIAL NOT NULL PRIMARY KEY,
+    quiz_id INT NOT NULL REFERENCES quiz(quiz_id),
+    question_text VARCHAR(100) NOT NULL,
+    correct_ans_id INT NOT NULL REFERENCES answers(ans_id)
+);
+
+CREATE TABLE quiz(
+    quiz_id SERIAL NOT NULL PRIMARY KEY,
+    quiz_difficulty VARCHAR(6) NOT NULL,
+    quiz_number INT NOT NULL
+);
