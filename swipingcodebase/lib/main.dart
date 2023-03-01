@@ -36,11 +36,12 @@ class _MyHomePageState extends State<MyHomePage> {
       Align(
           alignment: Alignment(0, -0.5),
           child: Container(
-            height: MediaQuery.of(context).size.height * 0.5,
+            height: MediaQuery.of(context).size.height * 0.45,
             width: MediaQuery.of(context).size.width * 0.75,
             color: Colors.green,
           )),
-      navigationBar()
+      navigationBar(), informationBar()
+
     ])
 
         // This trailing comma makes auto-formatting nicer for build methods.
@@ -98,5 +99,37 @@ class _navigationBarState extends State<navigationBar> {
             ],
           ),
         ));
+  }
+}
+class informationBar extends StatefulWidget {
+  const informationBar({Key? key}) : super(key: key);
+
+  @override
+  informationBarState createState() => informationBarState();
+}
+
+class informationBarState extends State<informationBar> {
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+        alignment: Alignment.topCenter,
+        child: Container(
+          height: MediaQuery.of(context).size.height * 0.10,
+          width: MediaQuery.of(context).size.width,
+          color: Colors.blue,
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                IconButton(
+                    padding: EdgeInsets.zero,
+                    style: IconButton.styleFrom(
+                        fixedSize: Size(MediaQuery.of(context).size.height * 0.1,
+                            MediaQuery.of(context).size.height * 0.1)),
+                    onPressed: () {},
+                    icon: Icon(color: Colors.white, Icons.info,size: 50)),
+              ]
+          )
+        )
+    );
   }
 }
