@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'navigation.dart';
 import 'main.dart';
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -11,110 +11,32 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('GUESS IT'),
+        title: Text(title),
       ),
-      body: GridView.count(
-        crossAxisCount: 2,
-        padding: const EdgeInsets.all(16.0),
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const QuizPage('Easy A Quiz')),
-              );
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.lightGreen,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              minimumSize: const Size(100.0, 40.0),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Welcome to Guess It',
+              style: Theme.of(context).textTheme.headline4,
             ),
-            child: const Text('Easy A'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const QuizPage('Easy B Quiz')),
-              );
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.green,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              minimumSize: const Size(100.0, 40.0),
+            const SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const QuizPage('Quiz'),
+                  ),
+                );
+              },
+              child: const Text('Start Quiz'),
             ),
-            child: const Text('Easy B'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const QuizPage('Medium A Quiz')),
-              );
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.orangeAccent,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              minimumSize: const Size(100.0, 40.0),
-            ),
-            child: const Text('Medium A'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const QuizPage('Medium B Quiz')),
-              );
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.orange,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              minimumSize: const Size(100.0, 40.0),
-            ),
-            child: const Text('Medium B'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const QuizPage('Hard A Quiz')),
-              );
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.redAccent,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              minimumSize: const Size(100.0, 40.0),
-            ),
-            child: const Text('Hard A'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const QuizPage('Hard B Quiz')),
-              );
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.red,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              minimumSize: const Size(100.0, 40.0),
-            ),
-            child: const Text('Hard B'),
-          ),
-        ],
+          ],
+        ),
       ),
+      bottomNavigationBar: const CustomBottomNavigationBar(title: 'Home'),
     );
   }
 }
