@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+
+class NavigationBar extends StatefulWidget {
+  const NavigationBar({Key? key}) : super(key: key);
+
+  @override
+  _NavigationBarState createState() {
+    return _NavigationBarState();
+  }
+}
+
 class _navigationBarState extends State<navigationBar> {
   @override
   Widget build(BuildContext context) {
